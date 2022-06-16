@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+    
+}
+
+.imagen1 {
+    margin: 20px;
+    width: 550px;
+    height: 950px;
+    float: right;
+    filter: brightness(70%); 
+
+}
+.imagen1:hover {
+    filter: brightness(130%);
+}
+
+.imagen2 {
+    width: 550px;
+    height: 950px;
+    margin: 20px;
+    float: left;
+    filter: brightness(70%);
+    
+}
+
+.imagen2:hover {
+    filter: brightness(130%);
+}
+
+h2  {
+    text-align: center;
+    color:  #1c456d  ;
+    filter: brightness(70%);
+}
+h2:hover{
+    filter: brightness(120%);
+}
+
+h3 {
+    text-align: center;
+    color: #3783cf ;
+    filter: brightness(70%);
+}
+h3:hover{
+    filter: brightness(120%);
+}
+.formulario {
+    background-color: transparent;
+    width: 700px;
+    height: 980px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+    box-shadow: 0 0 50px 1px rgba(0, 0,0, 1);
+    position: relative;
+    filter: brightness(70%);
+}
+
+.formulario:hover {
+    filter: brightness(130%);
+}
+
+.formulario__titulo {
+    text-align: center;
+    margin-top: 0;
+    /* color:rgba(0, 0, 0,0.7) */
+    color: #A93226;
+    font-size: 40px;
+}
+
+.input , textarea {
+    
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+
+    
+    min-height: 80px;
+    max-height: 130px;
+    max-width: 100%;
+    }
+
+.formulario__input, .formulario__label,.formulario__submit {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 20px;
+    
+}
+.formulario__input{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    margin-bottom: 40px;        
+}
+
+
+.formulario__input:focus {
+    outline: 1px solid rgba(0,0,0,0.2);
+}
+
+.formulario__input:focus + .formulario__label {
+    margin-top: -135px;    
+}
+
+.formulario__label {
+    padding-left: 20px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.6s;
+}
+
+.formulario__submit {
+    background:  #c0392b ;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.fijar {
+    margin-top: -135px;
+    color: rgba(0,0,0,1);
+}
+    
+/*ESTLOS DE FUENTES*/
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url("fonts/TrebuchetMS.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "BebasNeue";
+    src: url("fonts/BebasNeue.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url("fonts/websymbols-regular-webfont.svg#webSymbolsRegular") format("svg"),
+        url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot#iefix") format("enbedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/*FIN DE ESTILOS DE FUENTES*/
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background:url("../img/pattern.png");
+}
+.icon{
+    font-family: "WebSymbolsRegular";
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*FIN ESTILOS GENERALES*/
+
+/*INICIO DE CABECERA*/
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #3498DB;
+    font-family: "BebasNeue";
+    color: white;
+}
+#logo{
+    float: left;
+    width: 410px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+#logo .imagen{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+#menu{
+    float: right;
+    height: 40px;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 2px 4px 1px 4px;
+    line-height: 40px;
+}
+#menu ul li a{
+    display: block;
+    color: #34495E;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover{
+    color: rgba(181, 233, 233, 0.979);
+    transform: scale(1.2,1.2);
+}
+#menu ul li:last-child{
+    border: 1px solid white;
+    border-radius: 3px;
+    background: rgb(134, 133, 133);
+}
+#menu ul li:last-child:hover{
+    background: rgb(89, 119, 173);
+    transform: scale(1.2,1.2);
+}
+
+/*FIN DE CABECERA*/
+
+/*INICIO DE CONTENIDO*/
+#contenido{
+    width: 98%;
+    height: 1000px;
+    margin: 10px auto;
+    border: 1px solid cyan;
+}
+/*FIN DE CONTENIDO*/
+
+/*INICIO DE PIE DE PAGINA*/
+#footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    overflow: hidden;
+   
+}
+#menu-footer{
+    float: left;
+    width: 320px;
+    height: 255px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+#footer a{
+    text-decoration: none;
+    color: #37bcf9;
+    margin-top: 0px;
+}
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+#sociales{
+    display: block;
+    float: left;
+    margin-left: 81px;
+    width: 355px;
+    height: 255px;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+#footer .info-sociales{
+    color: #37bcf9;
+    font-family: "BebasNeue";
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+#iconos-sociales{
+    height: 100px;
+}
+#iconos-sociales .facebook,
+#iconos-sociales .twitter,
+#iconos-sociales .youtube{
+    float: left;
+    display: block;
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    margin-left:45px;
+    /*line-height: 100px;*/
+}
+#iconos-sociales .overly{
+    color: #37bcf9;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: -8px;
+    padding: 5px;
+    display: block;
+    height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all 300ms;
+}
+#iconos-sociales div:hover .overly{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+#twitt-icon{
+    float: left;
+    display: block;
+    font-size: 20px;
+}
+#sociales .email{
+    display: block;
+    float: left;
+    width: 333px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 300ms;
+    
+}
+#sociales .email:hover{
+    box-shadow: 0px 0px 20px white;
+    transform: scale(1.1,1.1);
+}
+#sociales .email a{
+    display: block;
+    float: left;
+    font-size: 45px;
+}
+#sociales .email p{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#info-footer{
+    display: block;
+    float: left;
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 460px;
+}
+#store{
+    margin-left: 96px;
+}
+#footer #store img{
+    width: 243px;
+    height: 95px;
+}
+#footer #store a:last-child img{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 210px;
+    height: 65px;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 17px;
+}
+#info-footer h2{
+    color: #37bcf9;
+    font-family: "BebasNeue";
+    font-size: 25px;
+    margin-top: 5px;
+    text-align: center;
+}
+#info-footer p:last-child{
+    margin-top: 5px;
+}
+#info-footer p:last-child a{
+    color: blue;
+}
+#info-footer p:last-child a:hover{
+    color: red;
+    transform: scale(1.5, 1.5);
+
+}
+@media (max-width:480px)
+ {
+
+    formı 
+    {
+
+         width:100%;
+    }
+    
+    
+}
+
+
+/*FIN DE PIE DE PAGINA*/    
