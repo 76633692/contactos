@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Somos BreakingMovie Contactanos</title>
+    <link rel="stylesheet" href="../CSS/style-contacto.css">
+    <link rel="icon" type="favicon/x-icon" href="../img/logo breaking movie.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+    
+</head>
+
+<body>
+    
+    <!--INICIO DE CABECERA-->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <img class="imagen" src="../IMG/logo breaking movie.png" title="Breaking movie">
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">PELICULAS</a></li>
+                    <li><a href="#">CINES</a></li>
+                    <li><a href="#">DULCERIA/PROMOCIONES</a></li>
+                    
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--FIN DE CABECARA-->
+    <main>
+        <img class="imagen1" src="../IMG/imagen1.jpg" alt="">
+        <img class="imagen2" src="../IMG/imagen2.jpg" alt="">
+        <form name="form" action="" class="formulario" id="form" onsubmit="return validar();">
+            <h1 class="formulario__titulo">CONTÁCTANOS</h1>
+                <br><br>
+            <h2> Atendemos todos los tipos de Consultas e Incidencias</h2>
+            <br>
+            <h3> Para garantizar la calidad de nuestro servicio , por favor rellene todos los campos que solicitamos.¡GRACIAS!</h3>
+            <br><br>
+            <input type="text" name="nombre" class="formulario__input"  ><label for="" 
+            class="formulario__label">Nombres</label>
+            <input type="text" name="apellido" class="formulario__input" ><label for="" 
+                class="formulario__label">Apellidos</label>
+            <input type="text" name="dni" class="formulario__input" ><label for="" 
+            class="formulario__label">Dni</label>
+            <input type="tel" name="telefono" class="formulario__input" ><label for="" 
+            class="formulario__label">Teléfono</label>
+            <input type="email" name="email" class="formulario__input" ><label for="" 
+            class="formulario__label">Correo</label>
+            <textarea  name="mensaje" id="texto" cols="50" rows="30" placeholder="¡¡POR FAVOR!! escriba aqui su MOTIVO y el detalle de su CASO."></textarea>
+            <input type="submit" id="submit" class="formulario__submit" onclick="validar()" >
+            
+        </form>
+        <script src="../JS/contacto.js"></script>
+    </main>
+    
+
+    <!---INICIO DE PIE DE PAGINA-->
+    <footer id="footer">
+        <div class="wrap">
+            <div id="menu-footer">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Politicas de privacidad</a></li>
+                </ul>
+            </div>
+            <div id="sociales" class="sociales-box">
+                <p class="info-sociales">
+                    Síguenos si amas las películas o quieres enterarte de nuestras promociones, concursos y más.
+                </p>
+                <div id="iconos-sociales">
+                    <div class="facebook">
+                        <a href="#" class="icon">f</a>
+                        <p class="overly">
+                            Facebook
+                        </p>
+                    </div>
+                    <div class="twitter">
+                        <a href="#" class="icon">t</a>
+                        <p class="overly">
+                            Twitter
+                        </p>
+                    </div>
+                    <div class="youtube">
+                        <a href="#" class="icon">y</a>
+                        <p class="overly">
+                            YouTube
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                
+            </div>
+            <div id="info-footer">
+                <p class="info-sociales">
+                    El universo Breaking movie también está al alcance de tus dedos.
+                </p>
+                <p id="store">
+                    <a href="#">
+                        <img class="icon" src="../IMG/icono play store.png" alt="Cargando imagen">
+                    </a>
+                    <a href="#">
+                        <img class="icon" src="../IMG/app store.png" alt="Cargando Imagen">
+                    </a>
+                </p>
+
+                <h2>Informacion publica de Breaking Movie</h2>
+                <p class="info-sociales">
+                    Para acceder a nuestra información pública que se difunde en el Portal del Mercado de Valores hacer
+                    <a href="#">click aquí.</a>
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+    <!--FIN DE PIE DE PAGINA-->
+</body>
+
+</html>
